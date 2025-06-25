@@ -1,0 +1,10 @@
+ */
+package Workshop5;
+
+/**
+ *
+ * @author mac
+ */
+public interface  Role {
+    void createWorker();
+}
