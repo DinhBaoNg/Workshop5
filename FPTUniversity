@@ -1,0 +1,60 @@
+package Workshop5;
+
+/**
+ *
+ * @author mac
+ */
+public class FPTUniversity extends University implements Role {
+    private String address;
+    public FPTUniversity(){
+        
+    }
+
+    public FPTUniversity(int par, String address, String cantho) {
+        this.address = address;
+    }
+
+    public FPTUniversity(String address, String name) {
+        super(name);
+        this.address = address;
+    }
+
+    public FPTUniversity(String address, String name, int size) {
+        super(name, size);
+        this.address = address;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+     @Override
+    public String toString() {
+        return "FPTU has four campuses Hanoi, HCM, DaNang, CanTho, QuyNhon";
+    }
+
+    @Override
+    public void createWorker() {
+        System.out.println("providing human resources");
+    }
+    
+}
