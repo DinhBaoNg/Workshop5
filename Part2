@@ -1,0 +1,21 @@
+ //What is stored in the static heap, stack, dynamic heap?
+    //Static Heap: Organization, University, Colony, FPTUniversity, BeeColony, Role, Tester.
+    //Stack:obj1, obj2, df
+    //Dynamid Heap: new BeeColony(), new FPTUniversity(),size, type, place, name, address
+    //Why is the Organization class abstract?
+    //Vì Organization là một khái niệm trừu tượng không đại diện cho bất kỳ đối tượng cụ thể nào.
+    //communicateByTool() được định nghĩa là abstract method, và do đó, class chứa nó cũng phải 
+    //là abstract class để đảm bảo tuân thủ cú pháp Java.
+    //Why must the Colony/University class implement the communicateByTool() method?
+    //Vì communicateByTool() là một abstract method trong Organization,
+    //nên mọi lớp con bắt buộc phải override method này.
+    //Đây là nguyên tắc trong Java: nếu bạn kế thừa một abstract class, thì bạn phải định nghĩa tất cả các 
+    //abstract method bên trong đó (trừ khi bạn cũng khai báo lớp con là abstract).
+    //You explain the polymorphism feature in your code ?
+    //Biến df có kiểu Role nhưng có thể tham chiếu tới cả BeeColony và FPTUniversity.
+    //Cùng một method createWorker() nhưng thực hiện hành vi khác nhau tùy đối tượng:
+    //Với BeeColony: in ra “Worker bees perform all the work of the bees”
+    //Với FPTUniversity: in ra “providing human resources”
+    //Describe the difference between an interface and an abstract class.
+    //Use an abstract class when you have a natural hierarchy and shared logic; use an interface when different 
+    //classes need to share behavior but aren't related by inheritance.
